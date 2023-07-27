@@ -1,7 +1,10 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+    val vendas=Vendas()
+    val pedido1= listOf("Maçã", "Maçã", "Maçã", "Maçã")
+    val pedido2= listOf("Laranja", "Laranja", "Laranja", "Laranja", "Laranja", "Laranja")
+    val pedido3 = listOf("Maçã", "Maçã", "Laranja", "Maçã")
+    println(vendas.pedidoSimples(pedido1))
+    println(vendas.pedidoSimples(pedido2))
+    println(vendas.pedidoSimples(pedido3))
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
 }
